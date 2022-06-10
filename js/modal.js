@@ -5,8 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
   /* ================================================================= */
 
   const modalTrigger = document.querySelectorAll('[data-modal-btn]'),
-    modal = document.querySelector('[data-modal]'),
-    modalClose = document.querySelector('[data-close]');
+    modal = document.querySelector('[data-modal]');
 
   // вешаем на все кнопки события клик, по клику показывам модальное окно
   modalTrigger.forEach(btn => {
@@ -18,18 +17,12 @@ window.addEventListener('DOMContentLoaded', function() {
     })
   })
 
-  // вешаем на крестик события клик, по клику скрываем модальное окно
-  modalClose.addEventListener('click',(e) => {
-
-    e.preventDefault()
-    hideModal()
-
-  })
-
   // вешаем на пространство вокруг модального окна события клик, по клику скрываем модальное окно
   modal.addEventListener('click',(e) => {
 
-    if(e.target === modal) hideModal();
+    if(e.target === modal || e.target.getAttribute('data-close') === ""){
+      hideModal();
+    }
 
   })
 
