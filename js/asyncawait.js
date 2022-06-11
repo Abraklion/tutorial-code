@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', function() {
     return await res.json();
   }
 
-  // делает отправку формы на сервер мeтодом Async/await
+  // делает отправку формы на сервер методом Async/await
   function bindPostData(form) {
     // form - тип: узел; формат: форма;
 
