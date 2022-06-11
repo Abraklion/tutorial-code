@@ -1,0 +1,19 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "Полный курс по JavaScript + React - с нуля до результата",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abraklion/Tutorial-Code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abraklion/Tutorial-Code/issues"
+  },
+  "homepage": "https://github.com/Abraklion/Tutorial-Code#readme"
+}
