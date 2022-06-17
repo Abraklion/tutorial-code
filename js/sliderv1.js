@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', function() {
     slides[slideIndex - 1].classList.remove('hide');
 
     // показывает какой сейчас выводится слайдер по счету
-    if (slides.length < 10) {
+    if (slideIndex < 10) {
       current.textContent =  `0${slideIndex}`;
     } else {
       current.textContent =  slideIndex;
